@@ -8,7 +8,7 @@ echo "La temperatura es: ".$temperatura." <br>La humedad es: ".$humedad;
 $usuario = "root";
 $contrasena = "";
 $servidor = "localhost";
-$basededatos = "esp32dht";// เปลี่ยนเป็นชื่อฐานข้อมูล
+$basededatos = "bigee";// เปลี่ยนเป็นชื่อฐานข้อมูล
 
 $conexion = mysqli_connect( $servidor, $usuario, "" ) or die ("No se ha podido conectar al servidor de Base de datos");
 
