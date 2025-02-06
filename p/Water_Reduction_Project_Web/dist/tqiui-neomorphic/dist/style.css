@@ -1,0 +1,166 @@
+body {
+	width: 100%;
+	height: 100vh;
+	background: #e9e8f5;
+	font-family: Pragmatica;
+	color: #555;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	overflow-x: hidden;
+	padding: 30px 100px;
+  }
+  
+  body * {
+	box-sizing: border-box;
+  }
+  
+  h1 {
+	font-size: 30px;
+	color: #6a6a6a;
+	margin: 0 0 10px;
+	text-shadow: 2px 2px 1px #fff;
+  }
+  
+  .displayNone {
+	display: none !important;
+  }
+  
+  .flexRow {
+	display: flex;
+	flex-flow: row wrap;
+  }
+  
+  .flexColumn {
+	display: flex;
+	flex-flow: column nowrap;
+  }
+  
+  .flexCenter {
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .noWrap {
+	flex-wrap: nowrap;
+  }
+  
+  .fieldContainer {
+	margin: 0 0 80px;
+  }
+  
+  .option, .option label {
+	cursor: pointer;
+  }
+  
+  .option {
+	width: 350px;
+	height: 60px;
+	background: radial-gradient(ellipse at top left, #e4e3f1, #e9e8f5 80%);
+	align-items: center;
+	padding: 20px;
+	margin: 10px 14px;
+	border-radius: 30px;
+	box-shadow: 
+	  14px 14px 15px rgba(0, 0, 0, 0.08),
+	  3px 3px 5px rgba(0, 0, 0, 0.1),
+	  -3px -3px 5px rgba(255, 255, 255, .4),
+	  -12px -12px 15px rgba(255, 255, 255, .6),
+	  inset 3px 3px 6px rgba(0, 0, 0, 0),
+	  inset -3px -3px 6px rgba(255, 255, 255, 0);
+	transition: all 250ms;
+	user-select: none;
+  }
+  
+  .option:hover {
+	box-shadow: 
+	  3px 3px 4px rgba(0, 0, 0, 0.06),
+	  3px 3px 4px rgba(0, 0, 0, 0.05),
+	  -2px -2px 2px rgba(255, 255, 255, .3),
+	  -2px -2px 10px rgba(255, 255, 255, .7),
+	  inset 3px 3px 6px rgba(0, 0, 0, 0),
+	  inset -3px -3px 6px rgba(255, 255, 255, 0);
+  }
+  
+  .field label {
+	font-weight: 700;
+	text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  }
+  
+  .option {
+	align-items: center;
+	border-radius: 30px 30px 30px 30px;
+	transform: translateZ(0);
+	transition: all 200ms;
+	padding: 0 35px;
+  }
+  
+  .option.active {
+	border-radius: 15px 15px 0 0;
+  }
+  
+  .option label {
+	font-size: 14px;
+	color: #999;
+	position: absolute;
+	top: 12px;
+  }
+  
+  .option input[type='text'] {
+	background: none;
+	font-weight: 700;
+	font-size: 18px;
+	color: #555;
+	border: none;
+	outline: none;
+	position: absolute;
+	bottom: 10px;
+  }
+  
+  .option .arrow {
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 26px;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 8px solid #999;
+  }
+  
+  .optionList {
+	width: 100%;
+	max-height: 300px;
+	background: #e9e8f5;
+	position: absolute;
+	top: 60px;
+	left: 0;
+	border-radius: 0 0 10px 10px;
+	overflow-y: auto;
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, .1), -2px -2px 4px rgba(255, 255, 255, 0),
+	  inset 2px 2px 5px rgba(0, 0, 0, 0.08),
+	  inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+	transition: all 200ms;
+	display: none;
+	z-index: 99999;
+  }
+  
+  .option.active .optionList {
+	display: block;
+  }
+  
+  .optionItem {
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	padding: 0 30px;
+	cursor: pointer;
+	position: relative;
+	z-index: 99999;
+	transition: all 300ms;
+  }
+  
+  .optionItem:hover {
+	background: #e1e1e1;
+  }
+  

@@ -1,0 +1,75 @@
+body {
+  background-color: #EBECF0;
+  background-blend-mode: screen;
+}
+
+/*a {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 8px;
+  line-height: 0;
+  /*width: 80px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}*/
+
+div:first-child {
+  margin: 20px 0;
+}
+div:first-child table:first-of-type {
+  margin: 15px 2px;
+  background: #EBECF0 !important;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+}
+div:first-child table:last-of-type {
+  margin: 15px 2px;
+  background: #EBECF0 !important;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+}
+div:first-child .head {
+  text-align: center;
+  margin: 45px 35px;
+}
+div:first-child .img-container {
+  text-align: center;
+}
+
+button {
+  color: #61677C;
+  font-weight: bold;
+  box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
+}
+button:active {
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
+}
+button .icon {
+  margin-right: 8px;
+}
+button.unit {
+  border-radius: 8px;
+  line-height: 0;
+  width: 80px;
+  height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 8px;
+  font-size: 19.2px;
+}
+button.unit .icon {
+  margin-right: 0;
+}
